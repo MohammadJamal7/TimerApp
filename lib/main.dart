@@ -34,9 +34,7 @@ class _MyApplicationState extends State<MyApplication> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const SizedBox(
-                  height: 100,
-                ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -53,14 +51,12 @@ class _MyApplicationState extends State<MyApplication> {
                     //SizedBox(width: 20,)
                   ],
                 ),
-                const SizedBox(
-                  height: 100,
-                ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[600],
+                      color: const Color.fromARGB(255, 160, 159, 159),
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(color: Colors.black),
                     ),
@@ -86,9 +82,7 @@ class _MyApplicationState extends State<MyApplication> {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 100,
-                ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.1),
                 MaterialButton(
                   // color: Colors.deepPurpleAccent,
                   onPressed: resetTime,
@@ -138,10 +132,6 @@ class _MyApplicationState extends State<MyApplication> {
                     ),
                   ),
                 ),
-
-
-
-
               ],
             ),
           ),
